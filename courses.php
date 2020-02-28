@@ -12,17 +12,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <ul class="nav">
-      <li class="nav-item">
-        <a href="/" class="nav-link active" href="#">Mis Cursos</a>
-      </li>
-      <li class="nav-item">
-        <a href="./player_index.html" class="nav-link" href="#">Reproductor</a>
-      </li>
-    </ul>
+    <?php require 'partials/header.php' ?>
+    
     <div id="curses" class="my-courses-container">
       <div class="card" style="width: 18rem;">
         <img src="./img/web.jpg" class="card-img-top" alt="..." />
