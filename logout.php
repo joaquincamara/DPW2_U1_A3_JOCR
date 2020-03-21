@@ -5,5 +5,5 @@
 
   session_destroy();
 
-  header('Location: /php-login-simple');
+  header('Location: /DPW2_U1_A3_JOCR/');
 ?>

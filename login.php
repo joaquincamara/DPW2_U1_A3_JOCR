@@ -3,7 +3,12 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /php-login-simple');
+   // production 
+   // header('Location: https://proyecto-terminal-jocr.000webhostapp.com/');
+   // Develop
+
+   header('Location: /DPW2_U1_A3_JOCR/');
+
   }
   require 'database.php';
 
@@ -17,7 +22,12 @@
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['user_id'] = $results['id'];
-      header("Location: /php-login-simple");
+   // production 
+   // header('Location: https://proyecto-terminal-jocr.000webhostapp.com/');
+   // Develop
+
+   header('Location: /DPW2_U1_A3_JOCR/');
+
     } else {
       $message = 'Sorry, those credentials do not match';
     }
