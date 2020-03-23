@@ -24,7 +24,7 @@ try {
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    $records = $conn->prepare('SELECT id, name, email, password FROM users WHERE id = :id');
+    $records = $conn->prepare('SELECT id, name, email, fatherLastName, motherLastName, password FROM users WHERE id = :id');
     $records->bindParam(':id', $_SESSION['user_id']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
