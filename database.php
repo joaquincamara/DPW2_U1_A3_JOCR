@@ -1,13 +1,5 @@
 <?php
 
-// Production
-
-/*
-$server = 'localhost';
-$username = 'id12754084_joaquincamara';
-$password = 'Joaquincr1';
-$database = 'id12754084_users';
-*/
 
 // Develop
 $server = 'localhost:8889';
